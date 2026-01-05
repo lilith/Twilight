@@ -5,7 +5,7 @@
 A CMS integrated static blog template built with [Astro](https://astro.build) framework.
 
 [![Bilibili](https://img.shields.io/badge/Bilibili-v1.0%20Intro-blue?logo=Bilibili&style=for-the-badge)](https://www.bilibili.com/video/BV18VsUzNEmL)&nbsp;
-[![YouTube](https://img.shields.io/badge/YouTube-v1.0%20Intro-red?logo=YouTube&style=for-the-badge)](https://www.youtube.com/watch?v=VVEiOK8WAK0)
+[![YouTube](https://img.shields.io/badge/YouTube-v1.0%20Intro-red?logo=YouTube&style=for-the-badge)](https://www.youtube.com/watch?v=SdpYpg_EzNg)
 
 [**🖥️ Live Demo**](https://twilight.spr-aachen.com)
 [**📝 Documentation**](https://docs.twilight.spr-aachen.com/en)
@@ -39,7 +39,7 @@ English | [**中文**](docs/README_ZH.md)
 ### Content
 - **CMS Functionality**: Easy content management with Decap CMS integration
 - **Data Visualization**: Visualized personal data like projects, skills etc.
-- **Table of Contents**: Automatic generation of post navigation
+- **Automatic Navigation**: Automatic generation of post navigation
 
 ### Components
 - **Analytics Support**: Umami analytics integration for visitor insights
@@ -96,15 +96,14 @@ Deploy your blog to any static hosting platform
 
 | Command                     | Action                      |
 |:----------------------------|:----------------------------|
-| `pnpm install`              | Install dependencies        |
+| `pnpm lint`                 | Check and fix code issues   |
+| `pnpm format`               | Format code with Biome      |
+| `pnpm check`                | Run Astro error checking    |
 | `pnpm dev`                  | Start local dev server      |
 | `pnpm build`                | Build site to `./dist/`     |
 | `pnpm preview`              | Preview build locally       |
-| `pnpm check`                | Run Astro error checking    |
-| `pnpm lint`                 | Check and fix code issues   |
-| `pnpm format`               | Format code with Biome      |
-| `pnpm new-post <filename>`  | Create a new blog post      |
 | `pnpm astro ...`            | Run Astro CLI commands      |
+| `pnpm new-post <filename>`  | Create a new blog post      |
 
 
 ## 🙏 Acknowledgements
@@ -112,7 +111,7 @@ Deploy your blog to any static hosting platform
 - Prototype   - [Fuwari](https://github.com/saicaca/fuwari)
 - Inspiration - [Yukina](https://github.com/WhitePaper233/yukina) & [Mizuki](https://github.com/matsuzaka-yuki/Mizuki)
 - CMS         - [astro-decap-cms-oauth](https://github.com/dorukgezici/astro-decap-cms-oauth)
-- translation - [translate](https://gitee.com/mail_osc/translate)
+- Translation - [translate](https://gitee.com/mail_osc/translate)
 
 
 ## 🤝 Support

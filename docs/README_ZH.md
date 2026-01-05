@@ -5,7 +5,7 @@
 一个基于 Astro 框架打造的支持后台管理的静态博客模板
 
 [![Bilibili](https://img.shields.io/badge/Bilibili-v1.0%20Intro-blue?logo=Bilibili&style=for-the-badge)](https://www.bilibili.com/video/BV18VsUzNEmL)&nbsp;
-[![YouTube](https://img.shields.io/badge/YouTube-v1.0%20Intro-red?logo=YouTube&style=for-the-badge)](https://www.youtube.com/watch?v=VVEiOK8WAK0)
+[![YouTube](https://img.shields.io/badge/YouTube-v1.0%20Intro-red?logo=YouTube&style=for-the-badge)](https://www.youtube.com/watch?v=SdpYpg_EzNg)
 
 [**🖥️ 演示**](https://twilight.spr-aachen.com)
 [**📝 文档**](https://docs.twilight.spr-aachen.com)
@@ -39,7 +39,7 @@
 ### 内容
 - **CMS 功能**: 基于 Decap CMS 的便捷内容管理
 - **数据可视化**: 可视化的项目、技能等个人数据
-- **文章目录**: 自动化生成的文章导航
+- **自动化导航**: 自动化生成的文章导航
 
 ### 组件
 - **站点统计**: 集成 Umami 访客统计的站点分析
@@ -96,15 +96,14 @@
 
 | 指令                       | 说明                      |
 |:---------------------------|:-------------------------|
-| `pnpm install`             | 安装依赖                  |
+| `pnpm lint`                | 检查并修复代码问题         |
+| `pnpm format`              | 使用 Biome 格式化代码      |
+| `pnpm check`               | 运行 Astro 错误检查       |
 | `pnpm dev`                 | 启动本地服务器             |
 | `pnpm build`               | 构建站点到 `./dist/`      |
 | `pnpm preview`             | 预览本地构建结果           |
-| `pnpm check`               | 运行 Astro 错误检查       |
-| `pnpm lint`                | 检查并修复代码问题         |
-| `pnpm format`              | 使用 Biome 格式化代码      |
-| `pnpm new-post <filename>` | 创建新博客文章             |
 | `pnpm astro ...`           | 运行 `Astro CLI` 命令     |
+| `pnpm new-post <filename>` | 创建新博客文章             |
 
 
 ## 🙏 致谢
