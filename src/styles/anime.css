@@ -10,7 +10,7 @@
 
 /* 统计卡片样式 */
 .anime-page .stat-card {
-	@apply bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-xl p-4 flex items-center gap-3 transition-all duration-300 hover:scale-105 hover:shadow-lg;
+	@apply bg-white/50 dark:bg-white/5 backdrop-blur-xs rounded-xl p-4 flex items-center gap-3 transition-all duration-300 hover:scale-105 hover:shadow-lg;
 	border: 1px solid var(--line-divider);
 	background: linear-gradient(135deg, var(--card-bg) 0%, var(--card-bg-transparent) 100%);
 }
@@ -86,7 +86,7 @@
 }
 
 .anime-page .anime-cover-overlay {
-	@apply absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-all duration-500 flex items-center justify-center;
+	@apply absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 transition-all duration-500 flex items-center justify-center;
 }
 
 .anime-page .anime-cover-link:hover .anime-cover-overlay {
@@ -94,7 +94,7 @@
 }
 
 .anime-page .play-button {
-	@apply w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-white transform scale-75 transition-all duration-500;
+	@apply w-16 h-16 rounded-full bg-white/20 backdrop-blur-xs flex items-center justify-center text-white transform scale-75 transition-all duration-500;
 	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
@@ -109,7 +109,7 @@
 
 /* 状态标签 */
 .anime-page .anime-status {
-	@apply absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-medium flex items-center gap-1 backdrop-blur-sm;
+	@apply absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-medium flex items-center gap-1 backdrop-blur-xs;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -123,7 +123,7 @@
 
 /* 评分标签 */
 .anime-page .anime-rating {
-	@apply absolute top-3 right-3 bg-black/50 backdrop-blur-sm text-white px-2 py-1 rounded-full text-sm flex items-center gap-1;
+	@apply absolute top-3 right-3 bg-black/50 backdrop-blur-xs text-white px-2 py-1 rounded-full text-sm flex items-center gap-1;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -171,7 +171,7 @@
 }
 
 .anime-page .progress-percent {
-	@apply text-[var(--primary)] font-bold;
+	@apply text-(--primary) font-bold;
 }
 
 .anime-page .progress-bar {
@@ -207,7 +207,7 @@
 }
 
 .anime-page .genre-tag {
-	@apply px-2 py-1 bg-[var(--btn-regular-bg)] text-black/75 dark:text-white/75 rounded-md text-xs font-medium transition-all duration-300 hover:bg-[var(--primary)] hover:text-white;
+	@apply px-2 py-1 bg-(--btn-regular-bg) text-black/75 dark:text-white/75 rounded-md text-xs font-medium transition-all duration-300 hover:bg-(--primary) hover:text-white;
 	border: 1px solid var(--line-divider);
 }
 
@@ -250,7 +250,7 @@
 }
 
 :root.dark .anime-page .anime-cover-overlay {
-	@apply bg-gradient-to-t from-black/80 via-black/20 to-transparent;
+	@apply bg-linear-to-t from-black/80 via-black/20 to-transparent;
 }
 
 :root.dark .anime-page .stat-card {
