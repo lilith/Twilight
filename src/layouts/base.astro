@@ -245,7 +245,7 @@ const umamiScripts = umamiConfig.scripts || ""; // 获取Umami scripts配置
     'banner-height-home': `${BANNER_HEIGHT_HOME}vh`,
     'banner-height': `${BANNER_HEIGHT}vh`,
 }}>
-@tailwind components;
+@reference "../styles/main.css";
 @layer components {
     .enable-banner.is-home #banner-wrapper {
         @apply h-(--banner-height-home) translate-y-(--banner-height-extend)
