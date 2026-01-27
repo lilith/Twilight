@@ -49,7 +49,7 @@
 		"js-yaml": "^4.1.1",
 		"katex": "^0.16.28",
 		"markdown-it": "^14.1.0",
-		"marked": "^16.4.2",
+		"marked": "^17.0.1",
 		"mdast-util-to-string": "^4.0.0",
 		"node-html-parser": "^7.0.2",
 		"overlayscrollbars": "^2.13.0",
