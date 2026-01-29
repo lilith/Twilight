@@ -260,7 +260,7 @@ const umamiScripts = umamiConfig.scripts || ""; // 获取Umami scripts配置
         @apply h-(--banner-height-home) translate-y-(--bannerOffset)
     }
     .enable-banner.is-home #main-grid {
-        @apply translate-y-[var(--banner-height-extend)];
+        @apply translate-y-(--banner-height-extend);
     }
     .enable-banner #top-row {
         @apply h-[calc(var(--banner-height-home)-5.5rem)]

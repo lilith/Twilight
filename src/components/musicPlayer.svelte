@@ -622,7 +622,7 @@ onDestroy(() => {
                     <Icon icon={mode === "meting" ? "material-symbols:cloud" : "material-symbols:folder"} class="text-lg" />
                 </button>
                 <button class="btn-plain w-8 h-8 rounded-lg flex items-center justify-center"
-                        class:text-[var(--primary)]={showPlaylist}
+                        class:text-(--primary)={showPlaylist}
                         onclick={togglePlaylist}
                         title={i18n(Key.playlist)}>
                     <Icon icon="material-symbols:queue-music" class="text-lg" />

@@ -32,7 +32,7 @@ const albumsData = sortedAlbums.filter(album => album.visible);
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {albumsData.map(album => (
                     <article
-                        class="album-card group bg-white dark:bg-neutral-900 rounded-lg overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 border border-neutral-200 dark:border-neutral-800"
+                        class="album-card group bg-white dark:bg-neutral-900 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-neutral-200 dark:border-neutral-800"
                     >
                         <a href={`/albums/${album.id}/`} class="block">
                             <!-- 封面图片 -->

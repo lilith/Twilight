@@ -159,7 +159,7 @@
 }
 
 /* 让主题色按钮更有视觉反馈 */
-button.bg-\[var\(--primary\)\] {
+button.bg-\(--primary\) {
     box-shadow: 0 0 0 2px var(--primary);
     border: none;
 }
