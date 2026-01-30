@@ -36,10 +36,10 @@ const titleInterval = config?.title?.interval ?? 1.5;
 <style define:vars={{ spinnerInterval: `${spinnerInterval}s`, titleInterval: `${titleInterval}s` }}>
     @keyframes spin {
         0% {
-            transform: rotate(0deg);
+            rotate: 0deg;
         }
         100% {
-            transform: rotate(360deg);
+            rotate: 360deg;
         }
     }
     @keyframes spinner-glow {

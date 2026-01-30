@@ -65,7 +65,7 @@ function formatTime(dateString: string): string {
                                     {moment.images && moment.images.length > 0 && (
                                         <div class="moment-images grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-3 lg:gap-4 mb-3 md:mb-4">
                                             {moment.images.map((image, index) => (
-                                                <div class="image-item relative rounded-md overflow-hidden aspect-square cursor-pointer hover:scale-105 transition-transform">
+                                                <div class="image-item relative rounded-md overflow-hidden aspect-square cursor-pointer hover:scale-105 transition">
                                                     <img
                                                         src={image}
                                                         alt={i18n(I18nKey.diaryImage)}
@@ -141,11 +141,11 @@ function formatTime(dateString: string): string {
     }
 
     .image-item img {
-        transition: transform 0.3s ease;
+        transition: scale 0.3s ease;
     }
 
     .image-item:hover img {
-        transform: scale(1.05);
+        scale: 1.05;
     }
 
     .action-btn {

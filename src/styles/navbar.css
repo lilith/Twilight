@@ -167,7 +167,7 @@
     #navbar .navbar-nav-links {
         position: static;
         left: unset;
-        transform: none;
+        translate: none;
         justify-self: center;
         gap: clamp(0.12rem, 1vw, 0.36rem);
     }
@@ -191,7 +191,7 @@
     /* 搜索状态下的避让逻辑以防重叠 */
     #navbar.is-searching .navbar-nav-links {
         opacity: 0;
-        transform: scale(0.9);
+        scale: 0.9;
         pointer-events: none;
         visibility: hidden;
     }

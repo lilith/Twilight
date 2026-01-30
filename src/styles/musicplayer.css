@@ -14,11 +14,11 @@
 
 @keyframes slide-up {
     from {
-        transform: translateY(100%);
+        translate: 0 100%;
         opacity: 0;
     }
     to {
-        transform: translateY(0);
+        translate: 0 0;
         opacity: 1;
     }
 }
@@ -27,21 +27,21 @@
 }
 
 @keyframes rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from { rotate: 0deg; }
+    to { rotate: 360deg; }
 }
 
 @keyframes musicWave {
-    0%, 100% { transform: scaleY(0.5); }
-    50% { transform: scaleY(1); }
+    0%, 100% { scale: 1 0.5; }
+    50% { scale: 1 1; }
 }
 
 @keyframes spin-continuous {
     from {
-        transform: rotate(0deg);
+        rotate: 0deg;
     }
     to {
-        transform: rotate(360deg);
+        rotate: 360deg;
     }
 }
 .cover-container img {
@@ -100,7 +100,7 @@ button.bg-\(--primary\) {
 }
 .progress-section div:hover,
 .bottom-controls > div:hover {
-    transform: scaleY(1.2);
+    scale: 1 1.2;
     transition: transform 0.2s ease;
 }
 /* Playlist Scrollbar Styles */

@@ -511,7 +511,7 @@
     .dropdown-wrapper:hover .dropdown-menu-custom {
         opacity: 1;
         visibility: visible;
-        transform: translateY(0);
+        translate: 0 0;
     }
     .dropdown-menu-custom {
         position: absolute;
@@ -524,7 +524,7 @@
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         opacity: 0;
         visibility: hidden;
-        transform: translateY(-10px);
+        translate: 0 -10px;
         transition: all 0.2s;
         z-index: 50;
         min-width: 80px;
@@ -552,10 +552,10 @@
     }
     .dropdown-icon {
         font-size: 0.9rem;
-        transition: transform 0.2s;
+        transition: rotate 0.2s;
     }
     .dropdown-wrapper:hover .dropdown-icon {
-        transform: rotate(180deg);
+        rotate: 180deg;
     }
     .heatmap-container {
         height: 180px;

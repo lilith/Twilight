@@ -59,7 +59,7 @@ const { class: className, style } = Astro.props;
         transition: transform 0.2s, background-color 0.2s
 
         &:active
-            transform: scale(0.9)
+            scale: 0.9
 
     .toc-floating-panel
         position: absolute
@@ -99,10 +99,11 @@ const { class: className, style } = Astro.props;
         border-radius: 10px
     
     .toc-floating-container.move-up
-        transform: translateY(-4rem)
+        translate: 0 -4rem
     
     .toc-floating-container.toc-hide
-        transform: translateY(2rem) scale(0.9)
+        translate: 0 2rem
+        scale: 0.9
         opacity: 0
         pointer-events: none
 

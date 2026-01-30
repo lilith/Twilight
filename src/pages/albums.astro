@@ -40,7 +40,7 @@ const albumsData = sortedAlbums.filter(album => album.visible);
                                 <img
                                     src={album.cover}
                                     alt={album.title}
-                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
                                     loading="lazy"
                                 />
                             </div>
@@ -111,17 +111,17 @@ const albumsData = sortedAlbums.filter(album => album.visible);
 
 <style>
     .album-card:hover {
-        transform: translateY(-2px);
+        translate: 0 -2px;
     }
 
     @keyframes fadeInUp {
         from {
             opacity: 0;
-            transform: translateY(20px);
+            translate: 0 20px;
         }
         to {
             opacity: 1;
-            transform: translateY(0);
+            translate: 0 0;
         }
     }
 
