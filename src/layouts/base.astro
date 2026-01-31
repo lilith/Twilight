@@ -260,16 +260,13 @@ const umamiScripts = umamiConfig.scripts || ""; // 获取Umami scripts配置
         @apply h-(--banner-height-home) translate-y-(--bannerOffset)
     }
     .enable-banner.is-home #main-grid {
-        @apply translate-y-(--banner-height-extend);
+        translate: 0 var(--banner-height-extend);
     }
     .enable-banner #top-row {
-        @apply h-[calc(var(--banner-height-home)-5.5rem)]
+        height: calc(var(--banner-height-home) - 5.5rem);
     }
     .enable-banner.is-home #sidebar-sticky {
-        @apply top-[calc(1rem-var(--banner-height-extend))]
-    }
-    .navbar-hidden {
-        @apply opacity-0 -translate-y-16
+        top: calc(1rem - var(--banner-height-extend)) !important;
     }
 }
 </style>
