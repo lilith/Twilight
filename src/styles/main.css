@@ -4,13 +4,11 @@
 @import './albums.css' layer(base);
 /* 导入追番页面样式 */
 @import './anime.css' layer(base);
-/* 导入动画样式 */
+/* 导入动过渡样式 */
 @import './transition.css' layer(base);
-@import './animation-enhancements.css' layer(base);
 
 @plugin '@tailwindcss/typography';
 
-@custom-variant dark (&:is(.dark *));
 
 @theme {
     --breakpoint-sm: 512px;
@@ -21,6 +19,10 @@
     --transition-duration-300: 300ms;
     --transition-duration-600: 600ms;
 }
+
+
+@custom-variant dark (&:is(.dark *));
+
 
 /*
     The default border color has changed to `currentcolor` in Tailwind CSS v4,
@@ -39,6 +41,7 @@
     border-color: var(--color-gray-200, currentcolor);
     }
 }
+
 
 @utility is-theme-transitioning {
     /* 主题过渡保护类 - 临时禁用所有过渡动画 */
